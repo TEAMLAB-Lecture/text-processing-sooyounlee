@@ -35,10 +35,8 @@ def normalize(input_string):
     """
     string_list = input_string.split()
     for i in range(len(string_list)):
-        if i == 0:
-            string_list[i] = string_list[i].lower()
-        else:
-            string_list[i] = string_list[i].capitalize()
+        string_list[i] = string_list[i].lower()
+        
     normalized_string = " ".join(string_list)
     return normalized_string
 
@@ -66,7 +64,7 @@ def no_vowels(input_string):
     """
     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    no_vowel_string = None
+    no_vowel_string = ""
     
     for char in input_string:
         if char in vowels:
