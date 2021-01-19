@@ -72,4 +72,3 @@ def no_vowels(input_string):
         no_vowel_string += char
     
     return no_vowel_string
-    
